@@ -51,7 +51,6 @@ public class RegistrationController {
         if (!response.isSuccess()) {
             model.addAttribute("captchaError", "Fill captcha");
         }
-
         boolean isConfirmEmpty = StringUtils.isEmpty(passwordConfirm);
         if (isConfirmEmpty) {
             model.addAttribute("password2Error", "Password confirmation cannot be empty");

@@ -68,7 +68,7 @@ public class UserService implements UserDetailsService {
         }
         user.setActivationCode(null);
         userRepository.save(user);
-        return false;
+        return true;
     }
 
     public List<User> findAll() {
